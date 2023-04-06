@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.ventas.backend.data.Producto" table="producto">
+      <meta attribute="class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name="id" column="id" type="int">
+   		<generator class="increment"/>
+      </id>
+	
+      <property name="nombre" column="nombre" type="string"/>
+      <property name="stock" column="stock" type="int"/>
+      <property name="foto" column="foto" type="string"/>
+      <property name="costo_compra" column="costo_compra" type="big_decimal"/>
+      <property name="costo_venta" column="costo_venta" type="big_decimal"/>
+      <property name="fecha_compra" column="fecha_compra" type="date"/>
+      <property name="fecha_vencimiento" column="fecha_vencimiento" type="date"/>
+      <property name="disponible" column="disponible" type="int"/>
+      <property name="descripcion" column="descripcion" type="string"/>
+      <property name="code" column="code" type="long"/>
+             
+      <many-to-one name="categoria" class="com.ventas.backend.data.Categoria" column="id_categoria" lazy="false"/>
+       
+   </class>
+</hibernate-mapping>

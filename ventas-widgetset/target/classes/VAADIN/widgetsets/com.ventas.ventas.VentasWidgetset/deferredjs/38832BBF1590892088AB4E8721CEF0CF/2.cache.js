@@ -1,0 +1,1 @@
+$wnd.com_ventas_ventas_VentasWidgetset.runAsyncCallback2('UXb(1834,1,{213:1,1:1});_.Shb=function V6d(){this.Thb(this.b)};_.Thb=function W6d(a){this.Uhb(a)};_.Uhb=function X6d(a){};_.gf=function Z6d(){this.Shb();Dtd().R5(this.a.nc())};CMg(np)(2);\n//# sourceURL=com.ventas.ventas.VentasWidgetset-2.js\n')

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="package-mapping" content="x:com.ventas.ventas.samples.crud" />
+</head>
+<body>
+<v-css-layout id="product-form" style-name="product-form-wrapper">
+    <v-vertical-layout height-full margin=false style-name="form-layout">
+        <vaadin-text-field caption="Nombre del Producto" _id="nombreProducto" width-full />
+        <v-horizontal-layout width-full>
+            <vaadin-text-field caption="Costo de Compra" _id="costoCompra" width-full />
+            <vaadin-text-field caption="Costo de Venta" _id="costoVenta" width-full />
+        </v-horizontal-layout>
+        <v-date-field caption="Fecha de Compra" _id="fechaCompra" width-full />
+        <v-date-field caption="Fecha de Vensimiento" _id="fechaVensimiento" width-full />
+        <v-text-field _id="stockProducto" caption="Stock" width-full />
+        <v-rich-text-area _id="descripcionProducto" caption="Descripción" width-full/>
+   		<v-text-field _id="nombreFoto" caption="" width-full/>
+   		<v-panel _id="fotoPanel" caption="Foto" height="250px" width-full >
+        </v-panel>
+        <vaadin-upload _id="uploadFoto" immediate-mode="false" responsive caption="Subir Foto" max-files="1" accept="application/pdf,image/*" width-full></vaadin-upload>
+        <vaadin-combo-box caption="Categoria" _id="categorias" width-full null-selection-allowed=false text-input-allowed=false />
+        
+        <vaadin-check-box _id="disponible" caption="Disponible" width-full />
+        
+        
+        
+        <v-css-layout :expand style-name="expander" />
+        <v-button style-name="primary" _id="save">Save</v-button>
+        <v-button style-name="cancel" _id="discard">Discard Changes</v-button>
+        <v-button style-name="cancel" _id="cancel" click-shortcut="escape">Cancel</v-button>
+        <v-button style-name="danger" _id="delete">Delete</v-button>
+    </v-vertical-layout>
+</v-css-layout>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.ventas.backend.data.PedidoItem" table="PedidoItem">
+      <meta attribute="class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name="id" column="id" type="int">
+   		<generator class="increment"/>
+      </id>
+	
+      <property name="cantidad" column="cantidad" type="int"/>
+      <property name="disponible" column="disponible" type="int"/>
+      <many-to-one name="producto" class="com.ventas.backend.data.Producto" column="id_producto" lazy="false" />
+      <many-to-one name="pedido" class="com.ventas.backend.data.Pedido" column="id_pedido" lazy="false"/> 
+      
+   </class>
+</hibernate-mapping>

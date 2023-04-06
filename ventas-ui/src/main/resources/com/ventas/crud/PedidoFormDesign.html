@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="package-mapping" content="x:com.ventas.ventas.samples.crud" />
+</head>
+<body>
+<v-css-layout id="product-form" style-name="product-form-wrapper">
+    <v-vertical-layout height-full margin=false style-name="form-layout">
+    
+    	<vaadin-text-field caption="ID del Pedido" _id="id" width-full />
+    	<v-date-field caption="Fecha del Pedido" _id="fecha" width-full />
+        <vaadin-text-field caption="Nombre de cliente" _id="nombreUsuario" width-full />
+        <vaadin-text-field caption="E-Mail del cliente" _id="emailUsuario" width-full />
+        <vaadin-text-field caption="Direccion del cliente" _id="direccionUsuario" width-full />
+        <vaadin-check-box _id="estado" caption="El Pedido esta Listo?" width-full />
+        
+        <v-css-layout :expand style-name="expander" />
+        <v-button style-name="cancel" _id="print">Imprimir</v-button>
+        <v-button style-name="primary" _id="save">Save</v-button>
+        <v-button style-name="cancel" _id="discard">Discard Changes</v-button>
+        <v-button style-name="cancel" _id="cancel" click-shortcut="escape">Cancel</v-button>
+    </v-vertical-layout>
+</v-css-layout>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import "ventastheme.scss";
+@import "addons.scss";
+
+// This should be in the Valo theme as a shorthand
+$v-layout-margin: $v-layout-margin-top $v-layout-margin-right $v-layout-margin-bottom $v-layout-margin-left !default;
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in ventastheme.scss
+
+.ventastheme {
+  @include addons;
+  @include ventastheme;
+  
+  .v-treegrid-row.pedido-item 
+  //.v-treegrid-row .v-treegrid-row-has-data .v-treegrid-row-depth-1 .pedido-item,
+  //.v-treegrid-row .v-treegrid-row-stripe .v-treegrid-row-has-data .v-treegrid-row-depth-1 .pedido-item
+		{
+   // Tried following elements and didn't work.
+   // background-color: red !important;
+   // color: blue !important; // This changed the color of the font.
+   background: gray !important;
+}
+}
+
+.pedido-item-label  {
+	background: gray;
+	background-color: gray;
+}
+
+.borderLayout {
+	border:1px solid black;
+}
+
+

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="package-mapping" content="x:com.ventas.ventas.samples.crud" />
+</head>
+<body>
+<v-css-layout id="product-form" style-name="product-form-wrapper">
+    <v-vertical-layout height-full margin=false style-name="form-layout">
+        <vaadin-text-field caption="Nombre de usuario" _id="nombreUsuario" width-full />
+        <vaadin-text-field caption="E-Mail del usuario" _id="emailUsuario" width-full />
+        <vaadin-text-field caption="Direccion del usuario" _id="direccionUsuario" width-full />
+        <vaadin-text-field caption="RUT" _id="rutUsuario" width-full />
+        <vaadin-password-field caption="Password del usuario" _id="passwordUsuario" width-full />
+        <vaadin-radio-button-group _id="tipoUsuario" caption="Tipo de Usuario" width-full />
+        
+        <v-css-layout :expand style-name="expander" />
+        <v-button style-name="primary" _id="save">Save</v-button>
+        <v-button style-name="cancel" _id="discard">Discard Changes</v-button>
+        <v-button style-name="cancel" _id="cancel" click-shortcut="escape">Cancel</v-button>
+        <v-button style-name="danger" _id="delete">Delete</v-button>
+    </v-vertical-layout>
+</v-css-layout>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="package-mapping" content="x:com.ventas.ventas.samples.crud" />
+</head>
+<body>
+<v-css-layout id="product-form" style-name="product-form-wrapper">
+    <v-vertical-layout height-full margin=false style-name="form-layout">
+        <vaadin-text-field caption="Nombre de categoria" _id="nombreCategoria" width-full />
+        
+        
+        <v-css-layout :expand style-name="expander" />
+        <v-button style-name="primary" _id="save">Save</v-button>
+        <v-button style-name="cancel" _id="discard">Discard Changes</v-button>
+        <v-button style-name="cancel" _id="cancel" click-shortcut="escape">Cancel</v-button>
+        <v-button style-name="danger" _id="delete">Delete</v-button>
+    </v-vertical-layout>
+</v-css-layout>
+</body>
+</html>
